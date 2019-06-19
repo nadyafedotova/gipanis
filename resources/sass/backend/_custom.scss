@@ -1,0 +1,92 @@
+// Here you can add other styles
+@import '~simple-line-icons/scss/simple-line-icons';
+
+// Fix mobile footer
+.app-footer {
+    flex: 0 0;
+    padding-top: map-get($spacers, 3);
+    padding-bottom: map-get($spacers, 3);
+}
+
+.filter-bar .form-inline {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0 10px 10px;
+}
+
+.filter-bar .form-inline .form-group label{
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.filter-bar .form-inline .form-group .form-inline .form-check{
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter-bar .form-inline .form-group .form-check.mb-2.mr-sm-2 {
+    display: flex;
+    align-items: center;
+}
+
+.filter-bar .form-inline .form-group .form-check.mb-2.mr-sm-2 label{
+    font-weight: 400;
+    padding: 0 0 0 10px;
+}
+
+.form-inline .form-group:nth-child(5) {
+    margin: auto 0;
+}
+.form-inline .form-group:nth-child(6) {
+    margin: auto 0 38px -63px;
+}
+
+@media (min-width: 576px) {
+    .form-inline label {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0;
+    }
+}
+
+.btn {
+    border: none;
+    border: 1px solid rgb(186, 186, 186);
+}
+
+@media (min-width: 576px) {
+    .form-inline .form-check {
+        justify-content: inherit;
+    }
+}
+
+
+.table thead th{
+  border-right: 2px solid #c8ced3;
+}
+.table tbody td {
+  border-right: 1px solid #c8ced3;
+}
+.colorLine {
+  background: #3c763d;
+}
+
+.filter-table .form-inline {
+  margin-top: 10px;
+}
+
+.filter-table .form-group {
+  margin: 0 52px 10px 0;
+}
+
+.filter-table .form-inline .form-group:last-child {
+  margin: 0;
+  padding-bottom: 50px;
+}
+
+.filter-table .form-group .btn{
+  border: 1px solid #000;
+}
